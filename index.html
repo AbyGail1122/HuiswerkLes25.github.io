@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mijn Pagina</title>
+
+<style>
+    body{
+      background-color: #FAB1DF;
+    }
+
+
+    header{
+      background-color: #930760;
+      width:100%;
+      height: 70px;
+    }
+
+    footer{
+       background-color: #930760;
+       width: 100%;
+       height: 70px;
+       text-align: center;
+       color: white;
+     }
+</style>
+
+<script
+src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$("#knop").click(function() {
+var naam = $("#idTekstveld1").val();
+var woonplaats = $("#idTekstveld2").val();
+var lied = $("#idTekstveld3").val();
+var bezigheid = $("#idTekstveld4").val();
+window.alert(
+"Hi, ik ben " + naam +
+" ik woon momenteel in " + woonplaats +
+", mijn favoriete lied is " + lied +
+" en in mijn vrije tijd vind ik het leuk om te " + bezigheid );
+});
+});
+</script>
+</head>
+<body>
+
+<header><h1>Welkom!</h1></header>
+<form>
+Wat is uw naam?
+<input type="text" id="idTekstveld1"><br><br>
+Wat is uw woonplaats?
+<input type="text" id="idTekstveld2"><br><br>
+Wat is uw favoriete lied?
+<input type="text" id="idTekstveld3"><br><br>
+Wat is uw favoriete bezigheid?
+<input type="text" id="idTekstveld4"><br><br>
+<input id="knop" name="knop" type="button"
+value="Klik op deze knop">
+</form>
+
+<footer><h2>&copy; Copyright Reserved.</h2></footer>
+
+</body>
+</html>
